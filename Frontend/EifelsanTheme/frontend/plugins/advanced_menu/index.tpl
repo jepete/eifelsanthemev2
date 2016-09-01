@@ -47,11 +47,11 @@
 									{/block}
 								{/if}
 
-								{if $hasTeaser}
+								{*if $hasTeaser}
 									{if $hasCategories}
 										<div class="menu--delimiter" style="right: {$columnAmount * 25}%;"></div>
 									{/if}
-									<div class="menu--teaser"{if $hasCategories} style="width: {$columnAmount * 25}%;"{else} style="width: 100%;"{/if}>
+									<!--<div class="menu--teaser"{if $hasCategories} style="width: {$columnAmount * 25}%;"{else} style="width: 100%;"{/if}>
 										{if !empty($mainCategory.media)}
 											<a href="{$mainCategory.link}" title="{s name="toCategoryBtn" namespace="frontend/plugins/advanced_menu/advanced_menu"}{/s}{$mainCategory.name|escape:'html'}" class="teaser--image" style="background-image: url({link file={$mainCategory.media.path}});"></a>
 										{/if}
@@ -68,8 +68,8 @@
 												</a>
 											</div>
 										{/if}
-									</div>
-								{/if}
+									</div>-->
+								{/if*}
 							</div>
 						{/if}
 					{/block}
