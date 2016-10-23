@@ -1,31 +1,108 @@
-module.exports = function(grunt) {
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+module.exports = function (grunt) {
+    var shopId = grunt.option('shopId') || 1,
+        file = '../web/cache/config_' + shopId + '.json',
+        config = grunt.file.readJSON(file),
+        lessTargetFile = {},
+        jsFiles = [],
+        jsTargetFile = {},
+        content = '',
+        variables = {};
 
-        bower: {
-            install: {
+    lessTargetFile['../' + config.lessTarget] = '../web/cache/all.less';
+
+    config['js'].forEach(function (item) {
+        jsFiles.push('../' + item);
+    });
+    jsTargetFile['../' + config.jsTarget] = jsFiles;
+
+    config['less'].forEach(function (item) {
+        content += '@import "../' + item + '";';
+        content += "\n";
+    });
+    grunt.file.write('../web/cache/all.less', content);
+
+    for (var key in config.config) {
+        variables[key] = config.config[key];
+    }
+
+    grunt.initConfig({
+        uglify: {
+            production: {
                 options: {
-                    targetDir: './frontend/_public/vendors',
-                    verbose: true,
-                    install: true,
-                    cleanup: true
-                }
+                    compress: true,
+                    preserveComments: false
+                },
+                files: jsTargetFile
+            },
+            development: {
+                options: {
+                    mangle: false,
+                    compress: false,
+                    beautify: true,
+                    preserveComments: 'all'
+                },
+                files: jsTargetFile
             }
         },
-        clean: [
-            './frontend/_public/vendors/doc-ready',
-            './frontend/_public/vendors/eventEmitter',
-            './frontend/_public/vendors/eventie',
-            './frontend/_public/vendors/get-size',
-            './frontend/_public/vendors/get-style-property',
-            './frontend/_public/vendors/matches-selector',
-            './frontend/_public/vendors/outlayer',
-            './frontend/_public/vendors/jquery.transit'
-        ]
+        less: {
+            production: {
+                options: {
+                    compress: true,
+                    modifyVars: variables,
+                    relativeUrls: true
+                },
+                files: lessTargetFile
+            },
+            development: {
+                options: {
+                    modifyVars: variables,
+                    dumpLineNumbers: 'all',
+                    relativeUrls: true,
+                    sourceMap: true,
+                    sourceMapFileInline: true,
+                    sourceMapRootpath: '../'
+                },
+                files: lessTargetFile
+            }
+        },
+        watch: {
+            less: {
+                files: [
+                    '../engine/Shopware/Plugins/**/*.less',
+                    '../themes/Frontend/**/*.less'
+                ],
+                tasks: ['less:development']
+            },
+            js: {
+                files: [
+                    '../themes/Frontend/**/_public/src/js/*.js',
+                    '../engine/Shopware/Plugins/**/frontend/**/src/js/**/*.js'
+                ],
+                tasks: ['uglify:development']
+            }
+        },
+        jshint: {
+            options: {
+                browser: true,
+                force: true,
+                globals: {
+                    jQuery: true,
+                    StateManager: true
+                }
+            },
+            src: [
+                'Gruntfile.js',
+                '../themes/Frontend/**/_public/src/js/*.js',
+                '../engine/Shopware/Plugins/**/frontend/**/src/js/**/*.js'
+            ]
+        }
     });
 
-    grunt.loadNpmTasks('grunt-bower-task');
-    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.registerTask('default', [ 'bower', 'clean' ]);
+    grunt.registerTask('production', [ 'jshint', 'less:production', 'uglify:production' ]);
+    grunt.registerTask('default', [ 'less:development', 'uglify:development', 'watch' ]);
 };

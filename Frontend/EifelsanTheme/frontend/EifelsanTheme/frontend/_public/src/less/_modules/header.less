@@ -1,0 +1,60 @@
+.top-bar {
+  .unitize(padding-top, 0px)!important;
+
+  .top-bar--navigation {
+      width: 100%;
+      background: @brand-primary !important;
+      color: white;
+      margin: 0 auto;
+    .top-bar--currency {
+      width: 80px;
+    }
+  }
+    .topbar-svg {
+      top: 1px;
+      width: 18px;
+      height: 18px;
+      position: relative;
+    }
+    .top-bar--telefon-teaser {
+      width: auto;
+      display: inline-block;
+      .unitize-padding(2.7,0,0,10);
+    }
+      .top-bar--info {
+        .unitize-padding(5,5,0,0);
+        top: -4px;
+        position: relative;
+      }
+      .top-bar--info-klein {
+        .unitize(font-size, 10);
+        position: relative;
+        top: -4px;
+        .unitize-padding(0,5,0,0);
+      }
+    .navigation--entry,
+    .header-main .top-bar--navigation .entry--service {
+      float: right !important;
+      color: white !important;
+      width: 150px;
+    }
+  .header-main .top-bar--navigation .entry--service:hover {
+    color: white !important;
+  }
+}
+
+.header-main {
+  .header--navigation {
+    .unitize-padding(20,0,25,0);
+  }
+}
+
+// Tablet styling for the global shop header
+@media screen and (min-width: @tabletViewportWidth) {
+  .header-main {
+      .top-bar {
+          .unitize-padding(0,0,0,0);
+          background: @brand-primary !important;
+      }
+  }
+}

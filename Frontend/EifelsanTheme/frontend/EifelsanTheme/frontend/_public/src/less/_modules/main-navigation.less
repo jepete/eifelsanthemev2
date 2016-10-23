@@ -1,0 +1,55 @@
+.navigation-main {
+    border-bottom: none;
+    background-color: #fafafa !important;
+    .js--menu-scroller {
+      background-color: none;
+    }
+    .container {
+      background: none;
+    }
+    .navigation--list .navigation--entry.is--hovered .navigation--link {
+        background: none;
+        background-color: white;
+    }
+    .navigation--link{
+      border-radius: 0px;
+    }
+    .is--active .navigation--link {
+        background: none;
+        border-bottom: 3px solid @brand-primary;
+        color: @brand-primary;
+        border-radius: 0px;
+    }
+    .is--active .navigation--link:hover,
+    .navigation--list .navigation--entry.is--hovered .navigation--link {
+        color: @brand-primary;
+        border-bottom: 3px solid @brand-primary;
+    }
+}
+
+.advanced-menu {
+    .button-container {
+        display: none;
+    }
+    .item--level-0 .menu--list-item-link,
+    .item--level-1 .menu--list-item-link,
+    .item--level-2 .menu--list-item-link {
+        .unitize-padding(4, 0);
+        .unitize(font-size, 14);
+
+        &:hover {
+            .unitize-padding(4, 0, 4, 4);
+        }
+    }
+    .item--level-1 .menu--list-item-link:before,
+    .item--level-2 .menu--list-item-link:before {
+      content: "▻ ";
+    }
+    
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+    .advanced-menu .content--wrapper {
+        .unitize-margin(20, 40);
+    }
+}
