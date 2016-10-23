@@ -20,14 +20,14 @@
 								{$desc = $sBasketItem.image.description|escape}
 							{/if}
 							<a href="{$detailLink}" title="{$sBasketItem.articlename|escape}" class="note--image-link">
-                                <img srcset="{$sBasketItem.image.thumbnails[0].sourceSet}" alt="{$desc}" title="{$desc|truncate:25:""}" class="note--image" />
+                                <img srcset="{$sBasketItem.image.thumbnails[0].sourceSet}" alt="{$desc}" title="{$desc|truncate:160}" class="note--image" />
 							</a>
 
 							{* Zoom picture *}
 							{block name="frontend_note_item_image_zoom"}{/block}
 						{else}
 							<a href="{$detailLink}" title="{$sBasketItem.articlename|escape}" class="note--image-link">
-								<img src="{link file='frontend/_public/src/img/no-picture.jpg'}" alt="{$desc}" title="{$desc|truncate:25:""}" class="note--image" />
+								<img src="{link file='frontend/_public/src/img/no-picture.jpg'}" alt="{$desc}" title="{$desc|truncate:160}" class="note--image" />
 							</a>
 						{/if}
 					</div>
@@ -119,13 +119,14 @@
                 {block name='frontend_note_item_actions_compare'}
                     {if {config name="compareShow"}}
                         <div class="note--compare">
-                            <a href="{url controller='compare' action='add_article' articleID=$sBasketItem.articleID}"
-                               data-product-compare-add="true"
-                               class="compare--link"
-                               title="{"{s name='ListingBoxLinkCompare'}{/s}"|escape}"
-                               rel="nofollow">
-                                <i class="icon--compare"></i> {s name='ListingBoxLinkCompare'}{/s}
-                            </a>
+							<form action="{url controller='compare' action='add_article' articleID=$sBasketItem.articleID}" method="post">
+								<button type="submit"
+								   data-product-compare-add="true"
+								   class="compare--link"
+								   title="{"{s name='ListingBoxLinkCompare'}{/s}"|escape}">
+									<i class="icon--compare"></i> {s name='ListingBoxLinkCompare'}{/s}
+								</button>
+							</form>
                         </div>
                     {/if}
                 {/block}
@@ -134,9 +135,11 @@
 
 		{* Remove article *}
 		{block name="frontend_note_item_delete"}
-			<a href="{url controller='note' action='delete' sDelete=$sBasketItem.id}" title="{"{s name='NoteLinkDelete'}{/s}"|escape}" class="note--delete">
-				<i class="icon--cross"></i>
-			</a>
+			<form action="{url controller='note' action='delete' sDelete=$sBasketItem.id}" method="post">
+				<button type="submit" title="{"{s name='NoteLinkDelete'}{/s}"|escape}" class="note--delete">
+					<i class="icon--cross"></i>
+				</button>
+			</form>
 		{/block}
 	</div>
 {/block}
