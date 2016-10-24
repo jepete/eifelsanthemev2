@@ -2,7 +2,7 @@
 
 	{$columnIndex = 0}
 	{$menuSizePercentage = 100 - (25 * $columnAmount * intval($hasTeaser))}
-	{$columnCount = 4 - ($columnAmount * intval($hasTeaser))}
+	{$columnCount = 5 - ($columnAmount * intval($hasTeaser))}
 
 	<ul class="menu--list menu--level-{$level} columns--{$columnCount}"{if $level === 0} style="width: 100%;"{/if}>
 		{block name="frontend_plugins_advanced_menu_list"}
