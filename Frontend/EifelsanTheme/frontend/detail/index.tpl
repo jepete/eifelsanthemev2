@@ -290,7 +290,7 @@
 								{block name='frontend_detail_data_attributes_checkbox4'}
 									{if $sArticle.checkbox4}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--airplane" title="{s name="DetailAttributeCheckbox4Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -300,7 +300,7 @@
 								{block name='frontend_detail_data_attributes_checkbox5'}
 									{if $sArticle.checkbox5}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--lifebuoy" title="{s name="DetailAttributeCheckbox5Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -310,7 +310,7 @@
 								{block name='frontend_detail_data_attributes_checkbox6'}
 									{if $sArticle.checkbox6}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--eye" title="{s name="DetailAttributeCheckbox6Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -320,7 +320,7 @@
 								{block name='frontend_detail_data_attributes_checkbox7'}
 									{if $sArticle.checkbox7}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--clock2" title="{s name="DetailAttributeCheckbox7Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -330,7 +330,7 @@
 								{block name='frontend_detail_data_attributes_checkbox8'}
 									{if $sArticle.checkbox8}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--microphone" title="{s name="DetailAttributeCheckbox8Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -340,7 +340,7 @@
 								{block name='frontend_detail_data_attributes_checkbox9'}
 									{if $sArticle.checkbox9}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--calendar" title="{s name="DetailAttributeCheckbox9Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -350,7 +350,7 @@
 								{block name='frontend_detail_data_attributes_checkbox10'}
 									{if $sArticle.checkbox10}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--bolt" title="{s name="DetailAttributeCheckbox10Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -360,7 +360,7 @@
 								{block name='frontend_detail_data_attributes_checkbox11'}
 									{if $sArticle.checkbox11}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--thunder" title="{s name="DetailAttributeCheckbox11Label"}{/s}"></i>
                                             </span>
 										</li>
@@ -370,7 +370,7 @@
 								{block name='frontend_detail_data_attributes_checkbox12'}
 									{if $sArticle.checkbox12}
 										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--content">
+                                            <span class="entry--icon">
 												<i class="icon--droplet" title="{s name="DetailAttributeCheckbox12Label"}{/s}"></i>
                                             </span>
 										</li>
