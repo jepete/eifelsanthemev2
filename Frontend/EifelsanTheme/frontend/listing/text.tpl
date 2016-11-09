@@ -3,7 +3,7 @@
 
 {* Long description *}
 {block name="frontend_listing_text_content_long"}
-	<div class="teaser--text-long more">
+	<div class="teaser--text-long">
 		{$sCategoryContent.cmstext}
 	</div>
 {/block}
