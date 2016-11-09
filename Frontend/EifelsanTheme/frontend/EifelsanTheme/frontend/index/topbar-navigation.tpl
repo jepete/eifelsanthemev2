@@ -25,7 +25,7 @@
 							c1.2,0.5,2.5,1.1,4.4,0c0.2,2.5,0.1,3.5-1.4,4c-3.8,1.3-7,3.7-8.9,6.6c-4.8-4.4-7.8-10.7-7.8-17.7c0-13.2,10.8-24,24-24
 							s24,10.8,24,24C50.8,33.6,47.8,39.9,43.1,44.3z"/>
 						</svg>
-						<span class="top-bar--info">0241 538 092 400 </span>
+						<span class="top-bar--info"><a href="tel:+49241538092400" class="footer--phone-link" style="color:#ff9500;"> 0241 538 092 400 </a></span>
 						<span class="top-bar--info-klein"> Mo-Fr 8 - 17 Uhr </span>
 						
 						<svg version="1.1" class="topbar-svg" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
