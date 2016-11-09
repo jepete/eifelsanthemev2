@@ -259,121 +259,73 @@
 								{* Product attribute Checkbox 1 *}
 								{block name='frontend_detail_data_attributes_checkbox1'}
 									{if $sArticle.checkbox1}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--book" title="{s name="DetailAttributeCheckbox1Label"}{/s}"></i>
-                                            </span>
-										</li>
+						          <span class="eifelcon-glutenfrei" style="font-size: 38px; color: #ff9500;" title="Glutenfrei"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 2 *}
 								{block name='frontend_detail_data_attributes_checkbox2'}
 									{if $sArticle.checkbox2}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--newspaper" title="{s name="DetailAttributeCheckbox2Label"}{/s}"></i>
-                                            </span>
-										</li>
+							       <span class="eifelcon-hefefrei" style="font-size: 38px; color: #ff9500;" title="Hefefrei"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 3 *}
 								{block name='frontend_detail_data_attributes_checkbox3'}
 									{if $sArticle.checkbox3}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--bag" title="{s name="DetailAttributeCheckbox3Label"}{/s}"></i>
-                                            </span>
-										</li>
+										 <span class="eifelcon-lactosefrei" style="font-size: 38px; color: #ff9500;" title="Lactosefrei"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 4 *}
 								{block name='frontend_detail_data_attributes_checkbox4'}
 									{if $sArticle.checkbox4}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--airplane" title="{s name="DetailAttributeCheckbox4Label"}{/s}"></i>
-                                            </span>
-										</li>
+				             <span class="eifelcon-vegetarisch" style="font-size: 38px; color: #ff9500;" title="Vegetarisch"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 5 *}
 								{block name='frontend_detail_data_attributes_checkbox5'}
 									{if $sArticle.checkbox5}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--lifebuoy" title="{s name="DetailAttributeCheckbox5Label"}{/s}"></i>
-                                            </span>
-										</li>
+										 <span class="eifelcon-ohne" style="font-size: 38px; color: #ff9500;" title="Ohne Zusätze"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 6 *}
 								{block name='frontend_detail_data_attributes_checkbox6'}
 									{if $sArticle.checkbox6}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--eye" title="{s name="DetailAttributeCheckbox6Label"}{/s}"></i>
-                                            </span>
-										</li>
+			               <span class="eifelcon-fruktosefrei" style="font-size: 38px; color: #ff9500;" title="Fruktosefrei"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 7 *}
 								{block name='frontend_detail_data_attributes_checkbox7'}
 									{if $sArticle.checkbox7}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--clock2" title="{s name="DetailAttributeCheckbox7Label"}{/s}"></i>
-                                            </span>
-										</li>
+	                   <span class="eifelcon-antidoping" style="font-size: 38px; color: #ff9500;" title="Antidoping getestet"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 8 *}
 								{block name='frontend_detail_data_attributes_checkbox8'}
 									{if $sArticle.checkbox8}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--microphone" title="{s name="DetailAttributeCheckbox8Label"}{/s}"></i>
-                                            </span>
-										</li>
+										 <span class="eifelcon-diabetiker" style="font-size: 38px; color: #2ba8c2;" title="Diabetiker geeignet"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 9 *}
 								{block name='frontend_detail_data_attributes_checkbox9'}
 									{if $sArticle.checkbox9}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--calendar" title="{s name="DetailAttributeCheckbox9Label"}{/s}"></i>
-                                            </span>
-										</li>
+										 <span class="eifelcon-placeholder" style="font-size: 38px; color: #ff9500;" title="Platzhalter"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 10 *}
 								{block name='frontend_detail_data_attributes_checkbox10'}
 									{if $sArticle.checkbox10}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--bolt" title="{s name="DetailAttributeCheckbox10Label"}{/s}"></i>
-                                            </span>
-										</li>
+										 <span class="eifelcon-placeholder" style="font-size: 38px; color: #ff9500;" title="Platzhalter"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 11 *}
 								{block name='frontend_detail_data_attributes_checkbox11'}
 									{if $sArticle.checkbox11}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--thunder" title="{s name="DetailAttributeCheckbox11Label"}{/s}"></i>
-                                            </span>
-										</li>
+										 <span class="eifelcon-placeholder" style="font-size: 38px; color: #ff9500;" title="Platzhalter"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 12 *}
 								{block name='frontend_detail_data_attributes_checkbox12'}
 									{if $sArticle.checkbox12}
-										<li class="base-info--entry entry-attribute">
-                                            <span class="entry--icon">
-												<i class="icon--droplet" title="{s name="DetailAttributeCheckbox12Label"}{/s}"></i>
-                                            </span>
-										</li>
+										 <span class="eifelcon-placeholder" style="font-size: 38px; color: #ff9500;" title="Platzhalter"></span>
 									{/if}
 								{/block}
                             {/block}
