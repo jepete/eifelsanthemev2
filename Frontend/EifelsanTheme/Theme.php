@@ -24,6 +24,10 @@ SHOPWARE_EOD;
 
 SHOPWARE_EOD;
 
+    protected $javascript = array(
+        'src/js/custom.js'
+    );
+
     public function createConfig(Form\Container\TabContainer $container)
     {
     }
