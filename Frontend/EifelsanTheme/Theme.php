@@ -25,7 +25,8 @@ SHOPWARE_EOD;
 SHOPWARE_EOD;
 
     protected $javascript = array(
-        'src/js/custom.js'
+        'src/js/custom.js',
+        'src/js/notification.js'
     );
 
     public function createConfig(Form\Container\TabContainer $container)
