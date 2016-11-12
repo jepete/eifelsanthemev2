@@ -251,6 +251,22 @@ td.head  {
 			{/if}
 		{/block}
 	</tr>
+{if {$position.meta.mdh}}
+<tr>
+<td align="left" width="15%" valign="top"></td>
+<td align="left">
+Mindesthaltbarkeit: {$position.meta.mdh}
+</td>
+</tr>
+{/if}
+{if {$position.meta.losnr}}
+<tr>
+<td align="left" width="15%" valign="top"></td>
+<td align="left">
+Losnummer: {$position.meta.losnr}
+</td>
+</tr>
+{/if}
 	{/block}
 	{/foreach}
 	</tbody>
