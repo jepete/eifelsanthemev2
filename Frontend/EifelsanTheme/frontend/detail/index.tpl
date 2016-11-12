@@ -226,20 +226,6 @@
                             {* Product attributes fields *}
                             {block name='frontend_detail_data_attributes'}
 
-                                {* Product attribute 1 *}
-                                {block name='frontend_detail_data_attributes_attr1'}
-                                    {if $sArticle.attr1}
-                                        <li class="base-info--entry entry-attribute">
-                                            <strong class="entry--label">
-                                                {s name="DetailAttributeField1Label"}{/s}:
-                                            </strong>
-
-                                            <span class="entry--content">
-                                                {$sArticle.attr1}
-                                            </span>
-                                        </li>
-                                    {/if}
-                                {/block}
 
                                 {* Product attribute 2 *}
                                 {block name='frontend_detail_data_attributes_attr2'}
@@ -307,13 +293,13 @@
 								{* Product attribute Checkbox 9 *}
 								{block name='frontend_detail_data_attributes_checkbox9'}
 									{if $sArticle.checkbox9}
-										 <span class="eifelcon-placeholder" style="font-size: 38px; color: #ff9500;" title="Platzhalter"></span>
+										 <span class="eifelcon2-vegan" style="font-size: 38px; color: #73aa2d;" title="Vegan"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 10 *}
 								{block name='frontend_detail_data_attributes_checkbox10'}
 									{if $sArticle.checkbox10}
-										 <span class="eifelcon-placeholder" style="font-size: 38px; color: #ff9500;" title="Platzhalter"></span>
+										 <span class="eifelcon2-hypo" style="font-size: 38px; color: #73aa2d;" title="Hypoallergen"></span>
 									{/if}
 								{/block}
 								{* Product attribute Checkbox 11 *}
