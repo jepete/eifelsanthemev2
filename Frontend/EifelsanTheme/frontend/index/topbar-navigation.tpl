@@ -35,7 +35,7 @@
 							c-45.7,37.6-94.6,74.3-102.4,74.3c-7.8,0-52.9-36.7-94.7-74.3H219z M233.6,160.6c0,2.6-2.1,4.8-4.8,4.8h-216c-2.6,0-4.8-2.1-4.8-4.8
 							V13.7c0-1.9,1.2-3.6,2.8-4.3C96.3,87,113.9,91,116.6,91c14.8,0,94.5-65.5,114-81.7c1.7,0.7,3,2.4,3,4.4V160.6z"/>
 						</svg>
-						<span class="top-bar--info-klein"><a style="color: white;" href="info@eifelsan.com">info@eifelsan.com</a></span>
+						<span class="top-bar--info-klein"><a style="color: white;" href="mailto:info@eifelsan.com">info@eifelsan.com</a></span>
 					</div>
 				{/block}
 
